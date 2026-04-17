@@ -1,12 +1,7 @@
 #!/bin/bash
 
-echo "Updating system..."
-apt update -y
-
-echo "Installing Python & Pip..."
+apt update
+apt upgrade -u 
 apt install python3 python3-pip -y
-
-echo "Installing Python packages..."
-pip3 install discord.py qrcode pillow
-
-echo "Setup completed!"
+pip3 install discord.py
+pip3 install qrcode pillow
